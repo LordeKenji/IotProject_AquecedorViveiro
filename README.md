@@ -4,12 +4,14 @@ Código desenvolvido em um microcontrolador ESP32 para o monitoramento e control
 o protocolo de comunicação utilizado foi o MQTT, conectado ao broker público HiveMQ, enquanto a dashboard foi desenvolvida
 na ferramento de desenvolvimento NodeRed.
 </p>
-## Motivação
 
+## Motivação
+<p align="justify">
 Com a chegada do inverno, animais de pequeno porte tais como os passarinhos acabam sofrendo com problemas de saúde tais como
 a hipotermia, para superar este problema pode-se utilizar sistemas de aquecimento, desde que possam ser controlados, para que 
 acidentes como superaquecimento não aconteçam. A abordagem utilizada neste projeto é de baixo custo, escalonável, segura e 
 facilmente replicável, trazendo conforto térmico e outras funcionalidades para o viveiro.
+</p>
 
 ## Objetivos
 
