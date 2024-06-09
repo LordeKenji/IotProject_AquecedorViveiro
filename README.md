@@ -47,13 +47,18 @@ Lembrete: MONTAR ESQUEMA DE LIGAÇÃO
 - Fonte de Alimentação Protoboard MB102 3.3V 5V
 - Fonte de alimentação 12V-3A ou similar
 - Jumpers Macho-Macho e Macho-Fêmea
+- Cabo Micro-USB para upload do código 
 
 ### Bibliotecas necessárias:
+Para isso acesse o Gerenciador de Bibliotecas pelo menu "Sketch" --> "Incluir Biblioteca" --> "Gerenciar Bibliotecas..." e pesquise
+pela biblioteca desejada na lista.
+
 - WiFi.h
 - PubSubClient.h
 - DHT.h
 - LiquidCrystal_I2C.h
 
-Softwares necessários:
-- Node-Red
-- Arduino IDE
+### Softwares necessários:
+- [Node-Red]([link_para_o_Node-Red](https://nodered.org/docs/getting-started/windows))
+- [Arduino IDE]([link_para_a_Arduino_IDE](https://www.arduino.cc/en/software))
+
