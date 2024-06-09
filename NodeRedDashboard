@@ -1,0 +1,662 @@
+[
+    {
+        "id": "96ca1531df0e37af",
+        "type": "tab",
+        "label": "Dashboard - Viveiro",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "20a2b5c12d9ac107",
+        "type": "mqtt-broker",
+        "name": "Broker HiveMQ",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "d4617ccbb98f4e17",
+        "type": "ui_tab",
+        "name": "Dashboard - Viveiro IoT",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4de90c9d87b525f6",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#dd9a08",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#dd9a08",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#dd9a08",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#f8bc3a",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#dd9a08",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "134eb96b394f9c64",
+        "type": "ui_group",
+        "name": "Temperatura",
+        "tab": "d4617ccbb98f4e17",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4299cf46f66db211",
+        "type": "ui_group",
+        "name": "Umidade",
+        "tab": "d4617ccbb98f4e17",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "818706a253f15d53",
+        "type": "ui_group",
+        "name": "Sistema Aquecimento",
+        "tab": "d4617ccbb98f4e17",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ea3b58506193d4c6",
+        "type": "ui_group",
+        "name": "Monitoramento",
+        "tab": "d4617ccbb98f4e17",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2daf0a0245ea16bc",
+        "type": "mqtt in",
+        "z": "96ca1531df0e37af",
+        "name": "",
+        "topic": "yaruko/temperature",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "20a2b5c12d9ac107",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 140,
+        "wires": [
+            [
+                "b410880a91887019",
+                "ad0cdfad18e2e966"
+            ]
+        ]
+    },
+    {
+        "id": "deaecd15368fb4d2",
+        "type": "mqtt in",
+        "z": "96ca1531df0e37af",
+        "name": "",
+        "topic": "yaruko/humidity",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "20a2b5c12d9ac107",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 220,
+        "wires": [
+            [
+                "42ec56d31e8a6f38",
+                "5726a31f364e1390"
+            ]
+        ]
+    },
+    {
+        "id": "b410880a91887019",
+        "type": "ui_chart",
+        "z": "96ca1531df0e37af",
+        "name": "",
+        "group": "134eb96b394f9c64",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Gráfico Temperatura",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "40",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 540,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eb47dc81a704de7b",
+        "type": "mqtt out",
+        "z": "96ca1531df0e37af",
+        "name": "",
+        "topic": "yaruko/lampada",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "20a2b5c12d9ac107",
+        "x": 620,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "42ec56d31e8a6f38",
+        "type": "ui_chart",
+        "z": "96ca1531df0e37af",
+        "name": "",
+        "group": "4299cf46f66db211",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Gráfico Umidade",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 550,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ad0cdfad18e2e966",
+        "type": "ui_gauge",
+        "z": "96ca1531df0e37af",
+        "name": "",
+        "group": "134eb96b394f9c64",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperatura",
+        "label": "",
+        "format": "{{value}} °C",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 530,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "5726a31f364e1390",
+        "type": "ui_gauge",
+        "z": "96ca1531df0e37af",
+        "name": "",
+        "group": "4299cf46f66db211",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Umidade",
+        "label": "",
+        "format": "{{value}} %",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 520,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "457a46b9e3d05b54",
+        "type": "ui_switch",
+        "z": "96ca1531df0e37af",
+        "name": "",
+        "label": "Luz",
+        "tooltip": "",
+        "group": "ea3b58506193d4c6",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "payload",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 470,
+        "y": 340,
+        "wires": [
+            [
+                "eb47dc81a704de7b"
+            ]
+        ]
+    },
+    {
+        "id": "8c107b0cf466627d",
+        "type": "mqtt in",
+        "z": "96ca1531df0e37af",
+        "name": "",
+        "topic": "yaruko/porta",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "20a2b5c12d9ac107",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 380,
+        "wires": [
+            [
+                "412186c779663d99",
+                "dcd3cba13b019487"
+            ]
+        ]
+    },
+    {
+        "id": "412186c779663d99",
+        "type": "ui_text",
+        "z": "96ca1531df0e37af",
+        "group": "ea3b58506193d4c6",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Situação:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 320,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "93e4d86732486456",
+        "type": "mqtt out",
+        "z": "96ca1531df0e37af",
+        "name": "",
+        "topic": "yaruko/controle",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "20a2b5c12d9ac107",
+        "x": 560,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "f00d41329fc01a8a",
+        "type": "ui_slider",
+        "z": "96ca1531df0e37af",
+        "name": "",
+        "label": "Temperatura Desejada",
+        "tooltip": "",
+        "group": "818706a253f15d53",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "40",
+        "step": 1,
+        "className": "",
+        "x": 280,
+        "y": 660,
+        "wires": [
+            [
+                "93e4d86732486456",
+                "9a8cc41dbbc19bd7"
+            ]
+        ]
+    },
+    {
+        "id": "9a8cc41dbbc19bd7",
+        "type": "ui_gauge",
+        "z": "96ca1531df0e37af",
+        "name": "",
+        "group": "818706a253f15d53",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperatura Desejada",
+        "label": "",
+        "format": "{{value}} °C",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#0065b3",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 580,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "adf058ae372776b2",
+        "type": "mqtt in",
+        "z": "96ca1531df0e37af",
+        "name": "",
+        "topic": "yaruko/aquecedor",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "20a2b5c12d9ac107",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 270,
+        "y": 580,
+        "wires": [
+            [
+                "e4b9add0746f2c5e"
+            ]
+        ]
+    },
+    {
+        "id": "e4b9add0746f2c5e",
+        "type": "ui_text",
+        "z": "96ca1531df0e37af",
+        "group": "818706a253f15d53",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Situação:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 540,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "da653e3685319b99",
+        "type": "ui_switch",
+        "z": "96ca1531df0e37af",
+        "name": "",
+        "label": "Sistema Aquecimento",
+        "tooltip": "",
+        "group": "818706a253f15d53",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 260,
+        "y": 500,
+        "wires": [
+            [
+                "ab6ce6399f5e5935"
+            ]
+        ]
+    },
+    {
+        "id": "ab6ce6399f5e5935",
+        "type": "mqtt out",
+        "z": "96ca1531df0e37af",
+        "name": "",
+        "topic": "yaruko/ativa_controle",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "20a2b5c12d9ac107",
+        "x": 540,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "dcd3cba13b019487",
+        "type": "function",
+        "z": "96ca1531df0e37af",
+        "name": "Muda Botão",
+        "func": "// Recuperar o estado anterior da memória de contexto\nvar previousState = context.get('previousState') || \"\";\n\n// Estado atual recebido na mensagem\nvar currentState = msg.payload;\n\n// Se o estado atual for diferente do estado anterior\nif (currentState !== previousState) {\n    // Atualizar o estado anterior na memória de contexto\n    context.set('previousState', currentState);\n\n    // Definir o payload para 1 se a porta estiver aberta, 0 se estiver fechada\n    if (currentState === \"Porta Aberta\") {\n        msg.payload = 1;\n    } else if (currentState === \"Porta Fechada\") {\n        msg.payload = 0;\n    } else {\n        return null; // Ignorar outros valores\n    }\n\n    // Enviar a mensagem com o novo estado\n    return msg;\n}\n\n// Se o estado não mudou, não fazer nada\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 300,
+        "wires": [
+            [
+                "457a46b9e3d05b54"
+            ]
+        ]
+    }
+]
