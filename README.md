@@ -35,6 +35,14 @@ Lembrete: MONTAR ESQUEMA DE LIGAÇÃO
 </p>
 
 ## Manual de Instalação
+<p align="justify">
+Informações importantes para a correta instalação e configuração do projeto, vide links para download, componentes necessários e as bibliotecas corretas
+para o funcionamento dos sensores, conexão e compatibilidade com a IDE do Arduino
+</p>
+
+### Softwares necessários:
+- [Node-Red](https://nodered.org/docs/getting-started/windows)
+- [Arduino IDE](https://www.arduino.cc/en/software)
 
 ### Lista de componetes
 
@@ -47,18 +55,20 @@ Lembrete: MONTAR ESQUEMA DE LIGAÇÃO
 - Fonte de Alimentação Protoboard MB102 3.3V 5V
 - Fonte de alimentação 12V-3A ou similar
 - Jumpers Macho-Macho e Macho-Fêmea
-- Cabo Micro-USB para upload do código 
+- Cabo Micro-USB para upload do código
+
+Lembrete: Inserir esquema de ligação depois
 
 ### Bibliotecas necessárias:
 Para isso acesse o Gerenciador de Bibliotecas pelo menu "Sketch" --> "Incluir Biblioteca" --> "Gerenciar Bibliotecas..." e pesquise
 pela biblioteca desejada na lista.
-
+- "ESP32 by Espressif Systems" (ESP32)
 - WiFi.h
 - PubSubClient.h
 - DHT.h
 - LiquidCrystal_I2C.h
 
-### Softwares necessários:
-- [Node-Red](https://nodered.org/docs/getting-started/windows)
-- [Arduino IDE](https://www.arduino.cc/en/software)
-
+## Referências
+- [How to Use 16x2 i2C LCD Display With ESP32](https://youtu.be/wkbScuJQxFc?si=fXbAD8nzfIJz3pD0)
+- [MQTT with ESP32 and DHT22 using Wokwi](https://youtu.be/fbQRF_IKuo4?si=3CgeNY1zY-cKv3Mq)
+- [Como usar um Relê 5V com ESP32](https://youtu.be/DnvoEBK24SQ?si=m33_L0pOCrrggAXE)
