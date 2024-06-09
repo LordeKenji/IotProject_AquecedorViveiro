@@ -59,6 +59,6 @@ pela biblioteca desejada na lista.
 - LiquidCrystal_I2C.h
 
 ### Softwares necessários:
-- [Node-Red]([link_para_o_Node-Red](https://nodered.org/docs/getting-started/windows))
-- [Arduino IDE]([link_para_a_Arduino_IDE](https://www.arduino.cc/en/software))
+- [Node-Red](https://nodered.org/docs/getting-started/windows)
+- [Arduino IDE](https://www.arduino.cc/en/software)
 
