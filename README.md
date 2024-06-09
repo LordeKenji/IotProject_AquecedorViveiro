@@ -46,17 +46,6 @@ para o funcionamento dos sensores, conexão e compatibilidade com a IDE do Ardui
 
 ### Lista de componetes
 
-- ESP32 DevKit
-- Sensor DHT11
-- Módulo LCD 16x2 com interface I2C
-- 2 relés 5V
-- Resistor PullDown (10k)
-- Sensor de Porta Magnético 
-- Fonte de Alimentação Protoboard MB102 3.3V 5V
-- Fonte de alimentação 12V-3A ou similar
-- Jumpers Macho-Macho e Macho-Fêmea
-- Cabo Micro-USB para upload do código
-
 | Item                                      |
 |-------------------------------------------|
 | ESP32 DevKit                              |
@@ -69,7 +58,6 @@ para o funcionamento dos sensores, conexão e compatibilidade com a IDE do Ardui
 | Fonte de alimentação 12V-3A ou similar   |
 | Jumpers Macho-Macho e Macho-Fêmea        |
 | Cabo Micro-USB para upload do código      |
-
 
 Lembrete: Inserir esquema de ligação depois
 
