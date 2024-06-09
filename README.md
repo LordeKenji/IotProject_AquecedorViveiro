@@ -24,4 +24,17 @@ Também será confeccionada um viveiro para a inserção do sistema de controle.
 </p>
 
 ## Arquitetura
+<p align="justify">
+A arquitetura adotada segue um padrão cliente-servidor, onde o dispositivo ESP32 atua como cliente MQTT e se conecta ao Broker público HiveMQ. Dessa forma 
+é possível a comunicação entre o dispositivo e outros dispositivos ou serviços que também estejam conectados ao mesmo broker MQTT, neste caso a Dashboard do 
+Node-Red
+
+Logo o ESP32, neste caso, torna-se responsável por enviar mensagens (publicar) sobre os dados de temperatura, umidade e estado da porta, além de receber comandos (subscrições) para controlar o aquecedor e a luz. Ele se conecta ao servidor MQTT (broker) através de uma conexão WiFi e utiliza a biblioteca PubSubClient para facilitar a comunicação MQTT.
+
+Lembrete: MONTAR ESQUEMA DE LIGAÇÃO
+</p>
+
+## Manual de Instalação
+
+
 
