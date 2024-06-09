@@ -36,7 +36,8 @@ Lembrete: MONTAR ESQUEMA DE LIGAÇÃO
 
 ## Manual de Instalação
 
-###Lista de componetes:
+###Lista de componetes
+
 - ESP32 DevKit
 - Sensor DHT11
 - Módulo LCD 16x2 com interface I2C
