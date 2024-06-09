@@ -14,13 +14,14 @@ facilmente replicável, trazendo conforto térmico e outras funcionalidades para
 </p>
 
 ## Objetivos
-
+<p align="justify">
 O objetivo deste projeto inicialmente será na efetivação da conexão do microcontrolador ao broker HiveMQ assim como o fluxo do Node-Red
 aos tópicos criados dentro do programa. Após feita essa conexão via WiFi, foca-se em implementar o controle de 2 relés os quais ativarão
 uma luz ambiente e um pequeno aquecedor, além destes dois dispositivos, também será monitorado um sensor de porta magnético e um sensor de 
 temperatura e umidade (DHT11), os dados enviados a DashBoard também poderão ser visualizados por meio de uma tela LCD 16x2.
 A temperatura desejada dentro do viveiro poderá ser alterada pela Dashboad do Node-Red assim como a ativação/desativação do sistema.
 Também será confeccionada um viveiro para a inserção do sistema de controle.
+</p>
 
 ## Arquitetura
 
