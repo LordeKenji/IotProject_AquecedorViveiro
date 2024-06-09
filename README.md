@@ -36,7 +36,7 @@ Lembrete: MONTAR ESQUEMA DE LIGAÇÃO
 
 ## Manual de Instalação
 
-###Lista de componetes
+### Lista de componetes
 
 - ESP32 DevKit
 - Sensor DHT11
@@ -48,7 +48,7 @@ Lembrete: MONTAR ESQUEMA DE LIGAÇÃO
 - Fonte de alimentação 12V-3A ou similar
 - Jumpers Macho-Macho e Macho-Fêmea
 
-###Bibliotecas necessárias:
+### Bibliotecas necessárias:
 - WiFi.h
 - PubSubClient.h
 - DHT.h
