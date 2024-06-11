@@ -59,7 +59,12 @@ para o funcionamento dos sensores, conexão e compatibilidade com a IDE do Ardui
 | Jumpers Macho-Macho e Macho-Fêmea        |
 | Cabo Micro-USB para upload do código      |
 
-![Esquema de ligação](https://raw.githubusercontent.com/LordeKenji/IotProject_AquecedorViveiro/images/ESQUEMALIGACAO.png)
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/LordeKenji/IotProject_AquecedorViveiro/images/ESQUEMALIGACAO.png" alt="Esquema de ligação">
+  <p><em>Figura 1: Esta é a legenda da imagem.</em></p>
+</div>
+
 
 
 
