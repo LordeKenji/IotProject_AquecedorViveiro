@@ -35,7 +35,7 @@ A arquitetura adotada segue um padrão cliente-servidor, onde o dispositivo ESP3
 <p align="justify">
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/LordeKenji/IotProject_AquecedorViveiro/images/FLUXONODERED.png" alt="Dashboard">
+  <img src="https://raw.githubusercontent.com/LordeKenji/IotProject_AquecedorViveiro/images/DASHBOARD.png" alt="Dashboard">
   <p><em>O viveiro pode ser controlado por esta dashboard criada</em></p>
 </div>
   
@@ -53,6 +53,12 @@ para o funcionamento dos sensores, conexão e compatibilidade com a IDE do Ardui
 ### Softwares necessários:
 - [Node-Red](https://nodered.org/docs/getting-started/windows)
 - [Arduino IDE](https://www.arduino.cc/en/software)
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/LordeKenji/IotProject_AquecedorViveiro/images/FLUXONODERED.png" alt="Dashboard">
+  <p><em>O fluxo disponibilizado pode ser importado e resultará nestes nós mostrados</em></p>
+</div>
+
 
 ### Lista de componetes
 
