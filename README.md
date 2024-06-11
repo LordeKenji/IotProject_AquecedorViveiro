@@ -41,8 +41,12 @@ A arquitetura adotada segue um padrão cliente-servidor, onde o dispositivo ESP3
   
 Logo o ESP32, neste caso, torna-se responsável por enviar mensagens (publicar) sobre os dados de temperatura, umidade e estado da porta, além de receber comandos (subscrições) para controlar o aquecedor e a luz. Ele se conecta ao servidor MQTT (broker) através de uma conexão WiFi e utiliza a biblioteca PubSubClient para facilitar a comunicação MQTT.
 <p align="justify">
-Lembrete: MONTAR ESQUEMA DE LIGAÇÃO
 </p>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/LordeKenji/IotProject_AquecedorViveiro/images/DIAGRAMA.jpg" alt="Dashboard">
+  <p><em>O esquema de comunicação é baseado neste diagrama</em></p>
+</div>
 
 ## Manual de Instalação
 <p align="justify">
