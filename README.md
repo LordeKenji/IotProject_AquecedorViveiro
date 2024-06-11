@@ -5,6 +5,11 @@ o protocolo de comunicação utilizado foi o MQTT, conectado ao broker público 
 na ferramento de desenvolvimento NodeRed.
 </p>
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/LordeKenji/IotProject_AquecedorViveiro/images/ESQUEMALIGACAOOFICIAL.png" alt="EsquemaReal">
+  <p><em>O protótipo mostrado será instalado no viveiro</em></p>
+</div>
+
 ## Motivação
 <p align="justify">
 Com a chegada do inverno, animais de pequeno porte tais como os passarinhos acabam sofrendo com problemas de saúde tais como
@@ -26,9 +31,14 @@ Também será confeccionada um viveiro para a inserção do sistema de controle.
 ## Arquitetura
 <p align="justify">
 A arquitetura adotada segue um padrão cliente-servidor, onde o dispositivo ESP32 atua como cliente MQTT e se conecta ao Broker público HiveMQ. Dessa forma 
-é possível a comunicação entre o dispositivo e outros dispositivos ou serviços que também estejam conectados ao mesmo broker MQTT, neste caso a Dashboard do 
-Node-Red
+é possível a comunicação entre o dispositivo e outros dispositivos ou serviços que também estejam conectados ao mesmo broker MQTT, neste caso a Dashboard do Node-Red
 <p align="justify">
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/LordeKenji/IotProject_AquecedorViveiro/images/FLUXONODERED.png" alt="Dashboard">
+  <p><em>O viveiro pode ser controlado por esta dashboard criada</em></p>
+</div>
+  
 Logo o ESP32, neste caso, torna-se responsável por enviar mensagens (publicar) sobre os dados de temperatura, umidade e estado da porta, além de receber comandos (subscrições) para controlar o aquecedor e a luz. Ele se conecta ao servidor MQTT (broker) através de uma conexão WiFi e utiliza a biblioteca PubSubClient para facilitar a comunicação MQTT.
 <p align="justify">
 Lembrete: MONTAR ESQUEMA DE LIGAÇÃO
@@ -59,10 +69,10 @@ para o funcionamento dos sensores, conexão e compatibilidade com a IDE do Ardui
 | Jumpers Macho-Macho e Macho-Fêmea        |
 | Cabo Micro-USB para upload do código      |
 
-
+O esquema de ligação deve ser feito semlhante a imagem, atente-se a ligação dos pinos 21 e 22 do LCD e na voltagem correta dos mesmos (5V) a imagem abaixo serve apenas como referência, o pushbutton representa o sensor porta mas deve-se adicionar uma lógica pull-down.
 <div align="center">
   <img src="https://raw.githubusercontent.com/LordeKenji/IotProject_AquecedorViveiro/images/ESQUEMALIGACAO.png" alt="Esquema de ligação">
-  <p><em>Figura 1: Esta é a legenda da imagem.</em></p>
+  <p><em>O esquema de ligação resultante será semelhante a este montado</em></p>
 </div>
 
 
