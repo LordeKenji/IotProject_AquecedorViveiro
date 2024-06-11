@@ -59,7 +59,9 @@ para o funcionamento dos sensores, conexão e compatibilidade com a IDE do Ardui
 | Jumpers Macho-Macho e Macho-Fêmea        |
 | Cabo Micro-USB para upload do código      |
 
-Lembrete: Inserir esquema de ligação depois
+![Esquema de ligação](ESQUEMALIGACAO.png)
+
+
 
 ### Bibliotecas necessárias:
 Para isso acesse o Gerenciador de Bibliotecas pelo menu "Sketch" --> "Incluir Biblioteca" --> "Gerenciar Bibliotecas..." e pesquise
