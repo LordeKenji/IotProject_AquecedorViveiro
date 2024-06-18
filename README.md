@@ -44,7 +44,7 @@ Logo o ESP32, neste caso, torna-se responsável por enviar mensagens (publicar) 
 </p>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/LordeKenji/IotProject_AquecedorViveiro/images/DIAGRAMA.jpg" alt="Dashboard">
+  <img src="https://raw.githubusercontent.com/LordeKenji/IotProject_AquecedorViveiro/images/DIAGRAMA_ATUALIZADO.jpg" alt="DIAGRAMA">
   <p><em>O esquema de comunicação é baseado neste diagrama</em></p>
 </div>
 
